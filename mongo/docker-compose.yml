@@ -1,6 +1,7 @@
 version: '3.7'  # 与镜像有关，这里只支持3.1
 services:
   mongo:  # 会自动从Docker Hub上自动获取mongo这个镜像
+    image: mongo:3.4
     build: ./
     restart: always
     ports:
